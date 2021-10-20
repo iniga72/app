@@ -101,6 +101,7 @@ const Home = ({ id, go, fetchedUser }) => (
 	</Panel>
 	
 );
+
 window.onload = function() {
 	//document.querySelector('#zz').text = "Цена";
  };

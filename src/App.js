@@ -18,7 +18,7 @@ var searchParams = new URLSearchParams(paramsString);
 var yourDate = new Date()
 
  };
-
+ 
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -42,6 +42,7 @@ const App = () => {
 	}, []);
 	const go = e => {
 		setActivePanel(e.currentTarget.dataset.to);
+		
 	};
 
 	return (
@@ -51,7 +52,7 @@ const App = () => {
 					<Home id='home' fetchedUser={fetchedUser} go={go} />
 					<Persik id='Persik' go={go} />
 					<Faq id='Faq' go={go} />
-					<Profil id='Profil' go={go} />
+					<Profil id='Profil' fetchedUser={fetchedUser} go={go} />
 					<Shop id='Shop' go={go} />
 					<Console id='Console' go={go}/>
 					<History id='History' go={go}/>
