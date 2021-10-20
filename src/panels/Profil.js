@@ -56,7 +56,7 @@ var searchParams = new URLSearchParams(paramsString);
   
 };
 const V_menu = () =>{
-  bridge.send("VKWebAppAddToFavorites")
+  bridge.send("VKWebAppAddToFavorites ")
 };
 const getreferalurl = () =>{
   //bridge.send("VKWebAppCopyText", {"text": "https://vk.com/app7900201#url"});
